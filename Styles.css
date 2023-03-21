@@ -1,57 +1,172 @@
-/* Général */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* En-tête */
-header {
-    background: #3f3f3f;
-    color: #ffffff;
-    padding: 1rem;
-}
-
-header h1 {
-    display: inline;
-    margin-right: 1rem;
+    color: #333;
 }
 
 /* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem 0;
+}
+
 nav ul {
-    display: inline;
-    list-style-type: none;
-    padding: 0;
+    display: flex;
 }
 
-nav li {
-    display: inline;
-    margin-right: 1rem;
+nav ul li {
+    list-style: none;
 }
 
-nav a {
-    color: #ffffff;
+nav ul li a {
+    display: block;
+    padding: 0 1rem;
+    color: #fff;
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #ccc;
 }
 
-/* Contenu principal */
-main {
-    padding: 2rem;
-}
-
+/* Sections */
 section {
+    padding: 2rem 0;
+}
+
+/* Hero */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.hero button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+/* À propos */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.about-content p {
+    max-width: 500px;
+    margin-left: 2rem;
+}
+
+/* Services */
+.services {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-list li {
+    width: calc(50% - 2rem);
     margin-bottom: 2rem;
 }
 
-/* Pied de page */
-footer {
-    background: #3f3f3f;
-    color: #ffffff;
-    padding: 1rem;
+.service-list img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Portfolio */
+.portfolio {
     text-align: center;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-list li {
+    width: calc(50% - 2rem);
+    margin-bottom: 2rem;
+}
+
+.portfolio-list img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact button:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }

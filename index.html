@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site Web</title>
+    <title>Mon site Web magnifique</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,42 +13,100 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Bienvenue sur mon site Web</h1>
-            <p>Ceci est un exemple de site Web simple créé avec HTML et CSS.</p>
+        <section class="hero">
+            <h1>Bienvenue sur mon site Web magnifique</h1>
+            <p>Ce site présente mon travail et mes compétences en tant que développeur Web.</p>
+            <button>En savoir plus</button>
         </section>
 
-        <section>
+        <section class="about">
             <h2>À propos</h2>
-            <p>Je suis un développeur Web passionné par la création de sites Web attrayants et fonctionnels. J'aime apprendre de nouvelles technologies et partager mes connaissances avec les autres.</p>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/200" alt="Ma photo">
+                <p>Je suis un développeur Web passionné par la création de sites Web attrayants et fonctionnels. J'aime apprendre de nouvelles technologies et partager mes connaissances avec les autres.</p>
+            </div>
         </section>
 
-        <section>
+        <section class="services">
             <h2>Services</h2>
-            <ul>
-                <li>Conception de sites Web</li>
-                <li>Développement d'applications Web</li>
-                <li>Optimisation pour les moteurs de recherche (SEO)</li>
-                <li>Maintenance et support</li>
+            <ul class="service-list">
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Conception de sites Web">
+                    <h3>Conception de sites Web</h3>
+                    <p>Je crée des sites Web attrayants et conviviaux pour une expérience utilisateur optimale.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Développement d'applications Web">
+                    <h3>Développement d'applications Web</h3>
+                    <p>Je développe des applications Web robustes et performantes pour répondre à vos besoins spécifiques.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Optimisation pour les moteurs de recherche (SEO)">
+                    <h3>Optimisation pour les moteurs de recherche (SEO)</h3>
+                    <p>J'optimise votre site Web pour améliorer sa visibilité dans les résultats de recherche.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Maintenance et support">
+                    <h3>Maintenance et support</h3>
+                    <p>Je fournis un support technique pour assurer la maintenance et la mise à jour de votre site Web.</p>
+                </li>
             </ul>
         </section>
 
-        <section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <ul class="portfolio-list">
+                <li>
+                    <img src="https://via.placeholder.com/300" alt="Projet 1">
+                                        <h3>Projet 1</h3>
+                    <p>Description du projet 1.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300" alt="Projet 2">
+                    <h3>Projet 2</h3>
+                    <p>Description du projet 2.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300" alt="Projet 3">
+                    <h3>Projet 3</h3>
+                    <p>Description du projet 3.</p>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/300" alt="Projet 4">
+                    <h3>Projet 4</h3>
+                    <p>Description du projet 4.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact">
             <h2>Contact</h2>
             <p>Si vous souhaitez discuter de votre projet ou en savoir plus sur mes services, n'hésitez pas à me contacter.</p>
-            <p>Email : exemple@exemple.com</p>
-            <p>Téléphone : +33 1 23 45 67 89</p>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Mon site Web. Tous droits réservés.</p>
+        <p>&copy; 2023 Mon site Web magnifique. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
+
